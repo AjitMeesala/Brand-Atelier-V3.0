@@ -183,7 +183,7 @@
       $folioItems = $(".folio-item");
 
     // get items
-    const mockups = await fetchJsonData("./js/gallery.json");
+    const mockups = await fetchJsonData("./assets/js/gallery.json");
 
     // bind click event
     $folioItems.each(function (i) {
