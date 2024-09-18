@@ -1,126 +1,84 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-  <head>
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8" />
-    <title>Brand Atelier</title>
-    <meta name="description" content="" />
-    <meta name="author" content="" />
 
-    <!-- mobile specific metas
+<head>
+  <!--- basic page needs
     ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <title>Brand Atelier</title>
+  <meta name="description" content="" />
+  <meta name="author" content="" />
 
-    <!-- CSS
+  <!-- mobile specific metas
     ================================================== -->
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="stylesheet" href="./assets/css/vendor.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- script
+  <!-- CSS
     ================================================== -->
-    <script src="./assets/js/modernizr.js"></script>
-    <script defer src="./assets/js/fontawesome/all.min.js"></script>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="./assets/css/vendor.css" />
 
-    <!-- favicons
+  <!-- script
     ================================================== -->
-    <link
-      rel="shortcut icon"
-      href="./assets/images/logoFavicon/favicon.ico"
-      type="image/x-icon"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/images/logoFavicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/logoFavicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/images/logoFavicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./assets/images/logoFavicon/site.webmanifest" />
-  </head>
+  <script src="./assets/js/modernizr.js"></script>
+  <script defer src="./assets/js/fontawesome/all.min.js"></script>
 
-  <body id="top">
-    <!-- preloader
+  <!-- favicons
     ================================================== -->
-    <div id="preloader">
-      <div id="loader" class="dots-fade">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+  <link rel="shortcut icon" href="./assets/images/logoFavicon/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/logoFavicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/logoFavicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/logoFavicon/favicon-16x16.png" />
+  <link rel="manifest" href="./assets/images/logoFavicon/site.webmanifest" />
+</head>
+
+<body id="top">
+  <!-- preloader
+    ================================================== -->
+  <div id="preloader">
+    <div id="loader" class="dots-fade">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <!-- Mouse Follow -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor2" id="cursor2">
+    <div class="progress-wrap">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </div>
+  </div>
+  <div class="cursor3" id="cursor3"></div>
+
+  <!-- header
+    ================================================== -->
+  <header class="s-header">
+    <div class="s-header__logo">
+      <a href="index.html">
+        <img src="./assets/images/BA_logo_V-0.svg" alt="Homepage" />
+      </a>
     </div>
 
-    <!-- Mouse Follow -->
-    <div class="cursor" id="cursor"></div>
-    <div class="cursor2" id="cursor2">
-      <div class="progress-wrap">
-        <svg
-          class="progress-circle svg-content"
-          width="100%"
-          height="100%"
-          viewBox="-1 -1 102 102"
-        >
-          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
-      </div>
-    </div>
-    <div class="cursor3" id="cursor3"></div>
-
-    <!-- header
-    ================================================== -->
-    <header class="s-header">
-      <div class="s-header__logo">
-        <a href="index.html">
-          <img src="./assets/images/BA_logo_V-0.svg" alt="Homepage" />
-        </a>
-      </div>
-
-      <div class="s-header__content">
-        <nav class="s-header__nav-wrap">
-          <ul class="s-header__nav">
-            <li>
-              <a
-                class="smoothscroll magic-hover magic-hover__square"
-                href="#hero"
-                title="Intro"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                class="smoothscroll magic-hover magic-hover__square"
-                href="#about"
-                title="About"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                class="smoothscroll magic-hover magic-hover__square"
-                href="#services"
-                title="Services"
-                >Services</a
-              >
-            </li>
-            <li>
-              <a
-                class="smoothscroll magic-hover magic-hover__square"
-                href="#portfolio"
-                title="Works"
-                >Gallery</a
-              >
-            </li>
-            <!-- <li>
+    <div class="s-header__content">
+      <nav class="s-header__nav-wrap">
+        <ul class="s-header__nav">
+          <li>
+            <a class="smoothscroll magic-hover magic-hover__square" href="#hero" title="Intro">Home</a>
+          </li>
+          <li>
+            <a class="smoothscroll magic-hover magic-hover__square" href="#about" title="About">About</a>
+          </li>
+          <li>
+            <a class="smoothscroll magic-hover magic-hover__square" href="#services" title="Services">Services</a>
+          </li>
+          <li>
+            <a class="smoothscroll magic-hover magic-hover__square" href="#portfolio" title="Works">Gallery</a>
+          </li>
+          <!-- <li>
               <a
                 class="smoothscroll magic-hover magic-hover__square"
                 href="#clients"
@@ -128,56 +86,48 @@
                 >Clients</a
               >
             </li> -->
-            <li>
-              <a
-                class="smoothscroll magic-hover magic-hover__square"
-                href="#s-contact"
-                title="Contact US"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <!-- end s-header__nav-wrap -->
+          <li>
+            <a class="smoothscroll magic-hover magic-hover__square" href="#s-contact" title="Contact US">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- end s-header__nav-wrap -->
 
-        <!-- <a href="mailto:#0" class="btn btn--primary btn--small">
+      <!-- <a href="mailto:#0" class="btn btn--primary btn--small">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"/></svg>
                 Get In Touch
             </a> -->
-      </div>
-      <!-- end header-content -->
+    </div>
+    <!-- end header-content -->
 
-      <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
-    </header>
-    <!-- end s-header -->
+    <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+  </header>
+  <!-- end s-header -->
 
-    <div> <!--class="scroller"-->
-      <!-- hero
+  <div> <!--class="scroller"-->
+    <!-- hero
     ================================================== -->
-      <section id="hero" class="s-hero target-section">
-        <!-- <div class="s-hero__bg">
+    <section id="hero" class="s-hero target-section">
+      <!-- <div class="s-hero__bg">
                 <div class="gradient-overlay"></div>
             </div> -->
 
-        <div class="row s-hero__content">
-          <div class="column">
-            <div>
-              <p
-                class="s-hero__content-about"
-                style="margin-bottom: 0px; padding-left: 10px"
-              >
-                Welcome to
-              </p>
-              <h1 style="margin-top: 0px; margin-bottom: 15px">
-                BRAND ATELIER
-              </h1>
-            </div>
-            <div class="s-hero__content-about">
-              <p>
-                We Create Brand Identity <br />to Propel Your Business Forward.
-              </p>
+      <div class="row s-hero__content">
+        <div class="column">
+          <div>
+            <p class="s-hero__content-about" style="margin-bottom: 0px; padding-left: 10px">
+              Welcome to
+            </p>
+            <h1 style="margin-top: 0px; margin-bottom: 15px">
+              BRAND ATELIER
+            </h1>
+          </div>
+          <div class="s-hero__content-about">
+            <p>
+              We Create Brand Identity <br />to Propel Your Business Forward.
+            </p>
 
-              <!-- <footer>
+            <!-- <footer>
                             <div class="s-hero__content-social">
                                 <a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
                                 <a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a>
@@ -185,72 +135,63 @@
                                 <a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
                             </div>
                         </footer> -->
-            </div>
           </div>
         </div>
+      </div>
 
-        <div class="s-hero__video">
-          <a
-            class="s-hero__video-link"
-            href="./assets/images/BrandAtelierShowreel.mp4"
-            data-lity=""
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <path d="M21 12l-18 12v-24z" />
-            </svg>
-            <span class="s-hero__video-text">Play Video</span>
-          </a>
-        </div>
+      <div class="s-hero__video">
+        <a class="s-hero__video-link" href="./assets/images/BrandAtelierShowreel.mp4" data-lity="">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M21 12l-18 12v-24z" />
+          </svg>
+          <span class="s-hero__video-text">Play Video</span>
+        </a>
+      </div>
 
-        <div class="s-hero__scroll">
-          <a href="#about" class="s-hero__scroll-link smoothscroll">
-            Scroll Down
-          </a>
-        </div>
-      </section>
-      <!-- end s-hero -->
+      <div class="s-hero__scroll">
+        <a href="#about" class="s-hero__scroll-link smoothscroll">
+          Scroll Down
+        </a>
+      </div>
+    </section>
+    <!-- end s-hero -->
 
-      <!-- about
+    <!-- about
     ================================================== -->
-      <section id="about" class="s-about">
-        <!-- <div class="horizontal-line"></div> -->
+    <section id="about" class="s-about">
+      <!-- <div class="horizontal-line"></div> -->
 
-        <div class="row">
-          <div class="column large-6 w-900-stack">
-            <div class="column large-12">
-              <div class="section-title" data-num="WHO" data-aos="fade-up">
-                <h3 class="h6">We Are</h3>
-              </div>
+      <div class="row">
+        <div class="column large-6 w-900-stack">
+          <div class="column large-12">
+            <div class="section-title" data-num="WHO" data-aos="fade-up">
+              <h3 class="h6">We Are</h3>
             </div>
+          </div>
 
-            <div class="column large-12 s-about__intro-text">
-              <!-- <h1 class="display-1" data-aos="fade-up">
+          <div class="column large-12 s-about__intro-text">
+            <!-- <h1 class="display-1" data-aos="fade-up">
                             Welcome to the launchpad of your brand's future! At Brand Atelier, we don't just create brand identities; we craft unforgettable stories that propel your business into the spotlight. Imagine your brand as a superhero—complete with a killer costume, an iconic logo, and a backstory that captivates your audience. We’re here to provide the cape and the superpowers.
                         </h1> -->
 
-              <p class="lead" data-aos="fade-up">
-                Welcome to the launchpad of your brand's future! At Brand
-                Atelier, we don't just create brand identities; we craft
-                unforgettable stories that propel your business into the
-                spotlight. Imagine your brand as a superhero—complete with a
-                killer costume, an iconic logo, and a backstory that captivates
-                your audience. We’re here to provide the cape and the
-                superpowers.
-              </p>
-            </div>
-          </div>
-
-          <div class="column large-6 w-900-stack s-about__photo-block">
-            <div class="s-about__photo" data-aos="fade-up"></div>
+            <p class="lead" data-aos="fade-up">
+              Welcome to the launchpad of your brand's future! At Brand
+              Atelier, we don't just create brand identities; we craft
+              unforgettable stories that propel your business into the
+              spotlight. Imagine your brand as a superhero—complete with a
+              killer costume, an iconic logo, and a backstory that captivates
+              your audience. We’re here to provide the cape and the
+              superpowers.
+            </p>
           </div>
         </div>
 
-        <!-- <div class="row block-large-1-2 block-tab-full s-about__process item-list">
+        <div class="column large-6 w-900-stack s-about__photo-block">
+          <div class="s-about__photo" data-aos="fade-up"></div>
+        </div>
+      </div>
+
+      <!-- <div class="row block-large-1-2 block-tab-full s-about__process item-list">
                 <div class="column item item-process" data-aos="fade-up">
                     <h3 class="item-title">Define</h3>
                     <p>
@@ -288,36 +229,33 @@
                     </p>
                 </div>
             </div> -->
-      </section>
-      <!-- end s-about -->
+    </section>
+    <!-- end s-about -->
 
-      <!-- services
+    <!-- services
     ================================================== -->
-      <section id="" class="s-services">
-        <div class="row">
-          <div class="column large-12">
-            <div class="section-title" data-num="WHAT" data-aos="fade-up">
-              <h3 class="h6">We do</h3>
-            </div>
-          </div>
-          <div class="column large-6 w-900-stack">
-            <h1 class="display-1" data-aos="fade-up">
-              Design That Defines - Branding That Differentiates
-            </h1>
-          </div>
-          <div class="column large-6 w-900-stack">
-            <p class="lead" data-aos="fade-up">
-              We make your brand a unique fingerprint in a world full of
-              duplicates. Our mission is to ensure your brand stands out and
-              stays memorable. With a blend of creativity and strategic insight,
-              we design logos, develop brand voices, and craft visual identities
-              that not only attract attention but also build lasting
-              relationships with your customers.
-            </p>
+    <section id="" class="s-services">
+      <div class="row">
+        <div class="column large-12">
+          <div class="section-title" data-num="WHAT" data-aos="fade-up">
+            <h3 class="h6">We do</h3>
           </div>
         </div>
+        <div class="column large-6 w-900-stack">
+          <h1 class="display-1" data-aos="fade-up">
+            Design That Defines - Branding That Differentiates
+          </h1>
+        </div>
+        <div class="column large-6 w-900-stack">
+          <p class="lead" data-aos="fade-up">
+            At Brand Atelier, every brand has a unique story waiting to be told. "Fueling your narration, reaching your
+            imagination" isn't just our motto—it's our promise. As you step into our creative world, consider yourself
+            part of a partnership where your vision fuels our inspiration.
+          </p>
+        </div>
+      </div>
 
-        <!-- <div class="row block-large-1-2 block-tab-full s-services__services item-list">
+      <!-- <div class="row block-large-1-2 block-tab-full s-services__services item-list">
                 <div class="column item item-service" data-aos="fade-up">
                     <span class="service-icon service-icon--product-design"></span>
                     <h3 class="item-title">Product Design</h3>
@@ -379,36 +317,36 @@
                     </p>
                 </div>
             </div> -->
-      </section>
-      <!-- end s-services -->
+    </section>
+    <!-- end s-services -->
 
-      <!--
+    <!--
     ================================================== -->
-      <section id="services" class="s-services">
-        <div class="row">
-          <div class="column large-12">
-            <div class="section-title" data-num="DEFINING" data-aos="fade-up">
-              <h3 class="h6">the art of Branding</h3>
-            </div>
-          </div>
-          <div class="column large-6 w-900-stack">
-            <h1 class="display-1" data-aos="fade-up">
-              We Create Designs that Speak Your Brand's Vision
-            </h1>
-          </div>
-          <div class="column large-6 w-900-stack">
-            <p class="lead" data-aos="fade-up">
-              We make your brand a unique fingerprint in a world full of
-              duplicates. Our mission is to ensure your brand stands out and
-              stays memorable. With a blend of creativity and strategic insight,
-              we design logos, develop brand voices, and craft visual identities
-              that not only attract attention but also build lasting
-              relationships with your customers.
-            </p>
+    <section id="services" class="s-services">
+      <div class="row">
+        <div class="column large-12">
+          <div class="section-title" data-num="DEFINING" data-aos="fade-up">
+            <h3 class="h6">the art of Branding</h3>
           </div>
         </div>
+        <div class="column large-6 w-900-stack">
+          <h1 class="display-1" data-aos="fade-up">
+            We Create Designs that Speak Your Brand's Vision
+          </h1>
+        </div>
+        <div class="column large-6 w-900-stack">
+          <p class="lead" data-aos="fade-up">
+            We make your brand a unique fingerprint in a world full of
+            duplicates. Our mission is to ensure your brand stands out and
+            stays memorable. With a blend of creativity and strategic insight,
+            we design logos, develop brand voices, and craft visual identities
+            that not only attract attention but also build lasting
+            relationships with your customers.
+          </p>
+        </div>
+      </div>
 
-        <!-- <div class="row block-large-1-2 block-tab-full s-services__services item-list">
+      <!-- <div class="row block-large-1-2 block-tab-full s-services__services item-list">
             <div class="column item item-service" data-aos="fade-up">
                 <span class="service-icon service-icon--product-design"></span>
                 <h3 class="item-title">Product Design</h3>
@@ -470,36 +408,34 @@
                 </p>
             </div>
         </div> -->
-      </section>
-      <!-- end -->
+    </section>
+    <!-- end -->
 
-      <!-- services
+    <!-- services
     ================================================== -->
-      <section id="" class="s-services">
-        <div class="row">
-          <div class="column large-12">
-            <div class="section-title" data-num="REDEFINING" data-aos="fade-up">
-              <h3 class="h6">the art of rebranding</h3>
-            </div>
-          </div>
-          <div class="column large-6 w-900-stack">
-            <h1 class="display-1" data-aos="fade-up">
-              Transforming Ideas into Iconic Brand Narratives
-            </h1>
-          </div>
-          <div class="column large-6 w-900-stack">
-            <p class="lead" data-aos="fade-up">
-              We make your brand a unique fingerprint in a world full of
-              duplicates. Our mission is to ensure your brand stands out and
-              stays memorable. With a blend of creativity and strategic insight,
-              we design logos, develop brand voices, and craft visual identities
-              that not only attract attention but also build lasting
-              relationships with your customers.
-            </p>
+    <section id="" class="s-services">
+      <div class="row">
+        <div class="column large-12">
+          <div class="section-title" data-num="REDEFINING" data-aos="fade-up">
+            <h3 class="h6">the art of rebranding</h3>
           </div>
         </div>
+        <div class="column large-6 w-900-stack">
+          <h1 class="display-1" data-aos="fade-up">
+            Transforming Ideas into Iconic Brand Narratives
+          </h1>
+        </div>
+        <div class="column large-6 w-900-stack">
+          <p class="lead" data-aos="fade-up">
+            Why settle for the ordinary when you can be extraordinary? Our rebranding process deepens into understanding
+            your business's essence and goals, ensuring every element we create is visually stunning and strategically
+            sound. We revitalise logos, revamp messaging, and reinvent visual identities, ensuring your brand is keeping
+            up with the times and setting the trends.
+          </p>
+        </div>
+      </div>
 
-        <!-- <div class="row block-large-1-2 block-tab-full s-services__services item-list">
+      <!-- <div class="row block-large-1-2 block-tab-full s-services__services item-list">
             <div class="column item item-service" data-aos="fade-up">
                 <span class="service-icon service-icon--product-design"></span>
                 <h3 class="item-title">Product Design</h3>
@@ -561,181 +497,145 @@
                 </p>
             </div>
         </div> -->
-      </section>
-      <!-- end s-services -->
+    </section>
+    <!-- end s-services -->
 
-      <section id="portfolio" class="s-portfolio">
-        <div class="row s-porfolio__top">
-          <div class="column large-12">
-            <div class="section-title" data-num="GALLERY" data-aos="fade-up">
-              <h3 class="h6">Our Works</h3>
-            </div>
+    <section id="portfolio" class="s-portfolio">
+      <div class="row s-porfolio__top">
+        <div class="column large-12">
+          <div class="section-title" data-num="GALLERY" data-aos="fade-up">
+            <h3 class="h6">Our Works</h3>
           </div>
-          <!-- <div class="column large-6 w-900-stack">
+        </div>
+        <!-- <div class="column large-6 w-900-stack">
                     <h1 class="display-1" data-aos="fade-up">
                         Here are some of our projects we done lately. Feel
                         free to check them out.
                     </h1>
                 </div> -->
-        </div>
-        <!-- end s-portfolio__top-->
+      </div>
+      <!-- end s-portfolio__top-->
 
-        <div
-          class="row s-portfolio__list block-large-1-2 block-tab-full collapse"
-        >
-          <div class="column" data-aos="fade-up">
-            <div class="folio-item">
-              <div class="folio-item__thumb">
-                <a
-                  class="folio-item__thumb-link"
-                  href="./assets/images/brandMockups/bigbold/bigbold.png"
-                  title="The Red Wheel"
-                  data-size="1050x700"
-                  data-count="0"
-                >
-                  <img src="./assets/images/brandMockups/bigbold/bigbold.png"
-                  srcset="./assets/images/brandMockups/bigbold/bigbold.png 1x,
-                  ./assets/images/brandMockups/bigbold/bigbold@2x.png 2x"
-                  alt="" />
-                </a>
-              </div>
-              <div class="folio-item__info">
-                <div class="folio-item__cat">Brand Design</div>
-                <h4 class="folio-item__title">Big Bold</h4>
-              </div>
-              <!-- <a
+      <div class="row s-portfolio__list block-large-1-2 block-tab-full collapse">
+        <div class="column" data-aos="fade-up">
+          <div class="folio-item">
+            <div class="folio-item__thumb">
+              <a class="folio-item__thumb-link" href="./assets/images/brandMockups/bigbold/bigbold.png"
+                title="The Red Wheel" data-size="1050x700" data-count="0">
+                <img src="./assets/images/brandMockups/bigbold/bigbold.png" srcset="./assets/images/brandMockups/bigbold/bigbold.png 1x,
+                  ./assets/images/brandMockups/bigbold/bigbold@2x.png 2x" alt="" />
+              </a>
+            </div>
+            <div class="folio-item__info">
+              <div class="folio-item__cat">Brand Design</div>
+              <h4 class="folio-item__title">Big Bold</h4>
+            </div>
+            <!-- <a
                 href="https://www.behance.net/"
                 title="Project Link"
                 class="folio-item__project-link"
                 >Project Link</a
               > -->
-              <div class="folio-item__caption">
-                <p>
-                  Vero molestiae sed aut natus excepturi. Et tempora numquam.
-                  Temporibus iusto quo.Unde dolorem corrupti neque nisi.
-                </p>
-              </div>
+            <div class="folio-item__caption">
+              <p>
+                Vero molestiae sed aut natus excepturi. Et tempora numquam.
+                Temporibus iusto quo.Unde dolorem corrupti neque nisi.
+              </p>
             </div>
           </div>
-          <!-- end column -->
-          <div class="column" data-aos="fade-up">
-            <div class="folio-item">
-              <div class="folio-item__thumb">
-                <a
-                  class="folio-item__thumb-link"
-                  href="./assets/images/brandMockups/foodvegan/veganfood.png"
-                  title="Music Life"
-                  data-size="1050x700"
-                  data-count="1"
-                >
-                  <img
-                    src="./assets/images/brandMockups/foodvegan/veganfood.png"
-                    srcset="
+        </div>
+        <!-- end column -->
+        <div class="column" data-aos="fade-up">
+          <div class="folio-item">
+            <div class="folio-item__thumb">
+              <a class="folio-item__thumb-link" href="./assets/images/brandMockups/foodvegan/veganfood.png"
+                title="Music Life" data-size="1050x700" data-count="1">
+                <img src="./assets/images/brandMockups/foodvegan/veganfood.png" srcset="
                       ./assets/images/brandMockups/foodvegan/veganfood.png 1x,
                       ./assets/images/brandMockups/foodvegan/veganfood@2x.png 2x
-                    "
-                    alt=""
-                  />
-                </a>
-              </div>
-              <div class="folio-item__info">
-                <div class="folio-item__cat">Brand Design</div>
-                <h4 class="folio-item__title">Food Vegan</h4>
-              </div>
-              <!-- <a
+                    " alt="" />
+              </a>
+            </div>
+            <div class="folio-item__info">
+              <div class="folio-item__cat">Brand Design</div>
+              <h4 class="folio-item__title">Food Vegan</h4>
+            </div>
+            <!-- <a
                 href="https://www.behance.net/"
                 title="Project Link"
                 class="folio-item__project-link"
                 >Project Link</a
               > -->
-              <div class="folio-item__caption">
-                <p>
-                  Vero molestiae sed aut natus excepturi. Et tempora numquam.
-                  Temporibus iusto quo.Unde dolorem corrupti neque nisi.
-                </p>
-              </div>
+            <div class="folio-item__caption">
+              <p>
+                Vero molestiae sed aut natus excepturi. Et tempora numquam.
+                Temporibus iusto quo.Unde dolorem corrupti neque nisi.
+              </p>
             </div>
           </div>
-          <!-- end column -->
-          <div class="column" data-aos="fade-up">
-            <div class="folio-item">
-              <div class="folio-item__thumb">
-                <a
-                  class="folio-item__thumb-link"
-                  href="./assets/images/brandMockups/pandagogaming/pandagogaming.png"
-                  title="OI Logo"
-                  data-size="1050x700"
-                  data-count="2"
-                >
-                  <img
-                    src="./assets/images/brandMockups/pandagogaming/pandagogaming.png"
-                    srcset="
+        </div>
+        <!-- end column -->
+        <div class="column" data-aos="fade-up">
+          <div class="folio-item">
+            <div class="folio-item__thumb">
+              <a class="folio-item__thumb-link" href="./assets/images/brandMockups/pandagogaming/pandagogaming.png"
+                title="OI Logo" data-size="1050x700" data-count="2">
+                <img src="./assets/images/brandMockups/pandagogaming/pandagogaming.png" srcset="
                       ./assets/images/brandMockups/pandagogaming/pandagogaming.png 1x,
                       ./assets/images/brandMockups/pandagogaming/pandagogaming@2x.png 2x
-                    "
-                    alt=""
-                  />
-                </a>
-              </div>
-              <div class="folio-item__info">
-                <div class="folio-item__cat">Brand Design</div>
-                <h4 class="folio-item__title">Pandago Gaming</h4>
-              </div>
-              <!-- <a
+                    " alt="" />
+              </a>
+            </div>
+            <div class="folio-item__info">
+              <div class="folio-item__cat">Brand Design</div>
+              <h4 class="folio-item__title">Pandago Gaming</h4>
+            </div>
+            <!-- <a
                 href="https://www.behance.net/"
                 title="Project Link"
                 class="folio-item__project-link"
                 >Project Link</a
               > -->
-              <div class="folio-item__caption">
-                <p>
-                  Vero molestiae sed aut natus excepturi. Et tempora numquam.
-                  Temporibus iusto quo.Unde dolorem corrupti neque nisi.
-                </p>
-              </div>
+            <div class="folio-item__caption">
+              <p>
+                Vero molestiae sed aut natus excepturi. Et tempora numquam.
+                Temporibus iusto quo.Unde dolorem corrupti neque nisi.
+              </p>
             </div>
           </div>
-          <!-- end column -->
-          <div class="column" data-aos="fade-up">
-            <div class="folio-item">
-              <div class="folio-item__thumb">
-                <a
-                  class="folio-item__thumb-link"
-                  href="./assets/images/brandMockups/pibeverages/pibeverages.png"
-                  title="Corrugated Sheets"
-                  data-size="1050x700"
-                  data-count="3"
-                >
-                  <img
-                    src="./assets/images/brandMockups/pibeverages/pibeverages.png"
-                    srcset="
+        </div>
+        <!-- end column -->
+        <div class="column" data-aos="fade-up">
+          <div class="folio-item">
+            <div class="folio-item__thumb">
+              <a class="folio-item__thumb-link" href="./assets/images/brandMockups/pibeverages/pibeverages.png"
+                title="Corrugated Sheets" data-size="1050x700" data-count="3">
+                <img src="./assets/images/brandMockups/pibeverages/pibeverages.png" srcset="
                       ./assets/images/brandMockups/pibeverages/pibeverages.png 1x,
                       ./assets/images/brandMockups/pibeverages/pibeverages@2x.png 2x
-                    "
-                    alt=""
-                  />
-                </a>
-              </div>
-              <div class="folio-item__info">
-                <div class="folio-item__cat">Brand Design</div>
-                <h4 class="folio-item__title">PI Beverages & Desserts</h4>
-              </div>
-              <!-- <a
+                    " alt="" />
+              </a>
+            </div>
+            <div class="folio-item__info">
+              <div class="folio-item__cat">Brand Design</div>
+              <h4 class="folio-item__title">PI Beverages & Desserts</h4>
+            </div>
+            <!-- <a
                 href="https://www.behance.net/"
                 title="Project Link"
                 class="folio-item__project-link"
                 >Project Link</a
               > -->
-              <div class="folio-item__caption">
-                <p>
-                  Vero molestiae sed aut natus excepturi. Et tempora numquam.
-                  Temporibus iusto quo.Unde dolorem corrupti neque nisi.
-                </p>
-              </div>
+            <div class="folio-item__caption">
+              <p>
+                Vero molestiae sed aut natus excepturi. Et tempora numquam.
+                Temporibus iusto quo.Unde dolorem corrupti neque nisi.
+              </p>
             </div>
           </div>
-          <!-- end column -->
-          <!-- <div class="column" data-aos="fade-up">
+        </div>
+        <!-- end column -->
+        <!-- <div class="column" data-aos="fade-up">
             <div class="folio-item">
               <div class="folio-item__thumb">
                 <a
@@ -774,8 +674,8 @@
               </div>
             </div>
           </div> -->
-          <!-- end column -->
-          <!-- <div class="column" data-aos="fade-up">
+        <!-- end column -->
+        <!-- <div class="column" data-aos="fade-up">
             <div class="folio-item">
               <div class="folio-item__thumb">
                 <a
@@ -813,46 +713,41 @@
               </div>
             </div>
           </div> -->
-          <!-- end column -->
-        </div>
-        <!-- folio-list -->
-      </section>
-      <!-- end s-portfolio -->
+        <!-- end column -->
+      </div>
+      <!-- folio-list -->
+    </section>
+    <!-- end s-portfolio -->
 
-      <!-- clients
+    <!-- clients
     ================================================== -->
-      <section id="clients">
-        <div id="clients" class="section s-clients">
-          <div class="row narrower s-clients__top h-text-center">
-            <div class="column">
-              <h1 class="display-1" data-aos="fade-up">
-                We've had the privilege
-                with working with some of the largest
-                and most iconic brands
-              </h1>
-            </div>
+    <section id="clients">
+      <div id="clients" class="section s-clients">
+        <div class="row narrower s-clients__top h-text-center">
+          <div class="column">
+            <h1 class="display-1" data-aos="fade-up">
+              We've had the privilege
+              with working with some of the largest
+              and most iconic brands
+            </h1>
           </div>
-          <!-- s-clients__top -->
+        </div>
+        <!-- s-clients__top -->
 
-          <div class="row clients-outer">
-            <div class="column">
-              <div class="clients" data-aos="fade-up">
-                <a href="#0" title="" class="clients__slide"
-                  ><img src="./assets/images/brandMockups/Archive/Crispy-bites.png"
-                /></a>
-                <a href="#0" title="" class="clients__slide"
-                  ><img src="./assets/images/brandMockups/Archive/Kantar.png"
-                /></a>
-                <a href="#0" title="" class="clients__slide"
-                  ><img src="./assets/images/brandMockups/Archive/Karvy.png"
-                /></a>
-                <a href="#0" title="" class="clients__slide"
-                  ><img src="./assets/images/brandMockups/Archive/rainbow-play-school.png"
-                /></a>
-                <a href="#0" title="" class="clients__slide"
-                  ><img src="./assets/images/brandMockups/Archive/Yantranet.png"
-                /></a>
-                <!-- <a href="#0" title="" class="clients__slide"
+        <div class="row clients-outer">
+          <div class="column">
+            <div class="clients" data-aos="fade-up">
+              <a href="#0" title="" class="clients__slide"><img
+                  src="./assets/images/brandMockups/Archive/Crispy-bites.png" /></a>
+              <a href="#0" title="" class="clients__slide"><img
+                  src="./assets/images/brandMockups/Archive/Kantar.png" /></a>
+              <a href="#0" title="" class="clients__slide"><img
+                  src="./assets/images/brandMockups/Archive/Karvy.png" /></a>
+              <a href="#0" title="" class="clients__slide"><img
+                  src="./assets/images/brandMockups/Archive/rainbow-play-school.png" /></a>
+              <a href="#0" title="" class="clients__slide"><img
+                  src="./assets/images/brandMockups/Archive/Yantranet.png" /></a>
+              <!-- <a href="#0" title="" class="clients__slide"
                   ><img src="./assets/images/brandMockups/yantranet/yantranet.png"
                 /></a>
                 <a href="#0" title="" class="clients__slide"
@@ -861,14 +756,14 @@
                 <a href="#0" title="" class="clients__slide"
                   ><img src="./assets/images/icons/clients/spotify.svg"
                 /></a> -->
-              </div>
-              <!-- end clients -->
             </div>
-            <!-- end column -->
+            <!-- end clients -->
           </div>
-          <!-- end clients-outer -->
+          <!-- end column -->
+        </div>
+        <!-- end clients-outer -->
 
-          <!-- <div class="row testimonials collapse">
+        <!-- <div class="row testimonials collapse">
             <div class="column large-12">
               <div class="testimonial-slider" data-aos="fade-up">
                 <div class="testimonial-slider__slide">
@@ -893,7 +788,7 @@
                 </div>
                 <!-- end testimonials__slide -->
 
-                <!-- <div class="testimonial-slider__slide">
+        <!-- <div class="testimonial-slider__slide">
                   <p>
                     Excepturi nam cupiditate culpa doloremque deleniti repellat.
                     Veniam quos repellat voluptas animi adipisci. Nisi eaque
@@ -913,9 +808,9 @@
                     </cite>
                   </div>
                 </div> -->
-                <!-- end testimonials__slide -->
+        <!-- end testimonials__slide -->
 
-                <!-- <div class="testimonial-slider__slide">
+        <!-- <div class="testimonial-slider__slide">
                   <p>
                     Repellat dignissimos libero. Qui sed at corrupti expedita
                     voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed
@@ -935,9 +830,9 @@
                     </cite>
                   </div>
                 </div> -->
-                <!-- end testimonials__slide -->
+        <!-- end testimonials__slide -->
 
-                <!-- <div class="testimonial-slider__slide">
+        <!-- <div class="testimonial-slider__slide">
                   <p>
                     Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc
                     ac augue. Fusce vel dui. In ac felis quis tortor malesuada
@@ -957,46 +852,46 @@
                     </cite>
                   </div>
                 </div> -->
-                <!-- end testimonials__slide -->
-              <!-- </div> -->
-              <!-- end testimonial slider -->
-            <!-- </div> -->
-            <!-- end column -->
-          <!-- </div> -->
-          <!-- end row -->
+        <!-- end testimonials__slide -->
+        <!-- </div> -->
+        <!-- end testimonial slider -->
+        <!-- </div> -->
+        <!-- end column -->
+        <!-- </div> -->
+        <!-- end row -->
         <!-- </div> -->
         <!-- end s-clients -->
-      </section>
+    </section>
 
-      <!-- contact
+    <!-- contact
     ================================================== -->
-      <section class="s-contact" id="s-contact">
-        <div class="row narrower s-contact__top h-text-center">
-          <div class="column">
-            <h3 class="h6">Get In Touch</h3>
-            <h1 class="display-1">
-              Have an idea or an epic project in mind? Talk to us. Let us work
-              together and make something great. Shoot us a message at
-            </h1>
-          </div>
+    <section class="s-contact" id="s-contact">
+      <div class="row narrower s-contact__top h-text-center">
+        <div class="column">
+          <h3 class="h6">Get In Touch</h3>
+          <h1 class="display-1">
+            Have an idea or an epic project in mind? Talk to us. Let us work
+            together and make something great. Shoot us a message at
+          </h1>
         </div>
-        <!-- s-footer__top -->
+      </div>
+      <!-- s-footer__top -->
 
-        <div class="row h-text-center">
-          <div class="column">
-            <p class="s-contact__email">
-              <a href="mailto:hello@brandatelier.in">hello@brandatelier.in</a>
-            </p>
-          </div>
+      <div class="row h-text-center">
+        <div class="column">
+          <p class="s-contact__email">
+            <a href="mailto:hello@brandatelier.in">hello@brandatelier.in</a>
+          </p>
         </div>
-      </section>
-      <!-- end s-contact -->
-      <section>
-        <!-- footer
+      </div>
+    </section>
+    <!-- end s-contact -->
+    <section>
+      <!-- footer
     ================================================== -->
-        <footer class="s-footer">
-          <div class="row row-y-top">
-            <!-- <div class="column large-8 medium-12">
+      <footer class="s-footer">
+        <div class="row row-y-top">
+          <!-- <div class="column large-8 medium-12">
                         <div class="row">
                             <div class="column large-7 tab-12 s-footer__block">
                                 <h4 class="h6">Where to Find Us</h4>
@@ -1031,149 +926,128 @@
                         </div>
                     </div> -->
 
-            <div class="column s-footer__block--end">
-              <a href="mailto:hello@brandatelier.in" class="btn h-full-width"
-                >Let's Talk</a
-              >
+          <div class="column s-footer__block--end">
+            <a href="mailto:hello@brandatelier.in" class="btn h-full-width">Let's Talk</a>
 
-              <div class="ss-copyright">
-                <span>Copyright Brand Atelier 2024</span>
-                <span>Design by Team Brand Atelier</span>
-              </div>
+            <div class="ss-copyright">
+              <span>Copyright Brand Atelier 2024</span>
+              <span>Design by Team Brand Atelier</span>
             </div>
-
-            <div class="ss-go-top">
-              <a class="smoothscroll" title="Back to Top" href="#top"> &uarr; </a>
-            </div>
-            <!-- end ss-go-top -->
           </div>
-        </footer>
-      </section>
-    </div>
 
-    <!-- photoswipe background
-    ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-      <div class="pswp__bg"></div>
-      <div class="pswp__scroll-wrap">
-        <div class="pswp__container">
-          <div class="pswp__item"></div>
-          <div class="pswp__item"></div>
-          <div class="pswp__item"></div>
+          <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"> &uarr; </a>
+          </div>
+          <!-- end ss-go-top -->
         </div>
+      </footer>
+    </section>
+  </div>
 
-        <div class="pswp__ui pswp__ui--hidden">
-          <div class="pswp__top-bar">
-            <div class="pswp__counter"></div>
-            <button
-              class="pswp__button pswp__button--close"
-              title="Close (Esc)"
-            ></button>
-            <button
-              class="pswp__button pswp__button--share"
-              title="Share"
-            ></button>
-            <button
-              class="pswp__button pswp__button--fs"
-              title="Toggle fullscreen"
-            ></button>
-            <button
-              class="pswp__button pswp__button--zoom"
-              title="Zoom in/out"
-            ></button>
-            <div class="pswp__preloader">
-              <div class="pswp__preloader__icn">
-                <div class="pswp__preloader__cut">
-                  <div class="pswp__preloader__donut"></div>
-                </div>
+  <!-- photoswipe background
+    ================================================== -->
+  <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+      <div class="pswp__ui pswp__ui--hidden">
+        <div class="pswp__top-bar">
+          <div class="pswp__counter"></div>
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+          <button class="pswp__button pswp__button--share" title="Share"></button>
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
               </div>
             </div>
           </div>
-          <div
-            class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"
-          >
-            <div class="pswp__share-tooltip"></div>
-          </div>
-          <button
-            class="pswp__button pswp__button--arrow--left"
-            title="Previous (arrow left)"
-          ></button>
-          <button
-            class="pswp__button pswp__button--arrow--right"
-            title="Next (arrow right)"
-          ></button>
-          <div class="pswp__caption">
-            <div class="pswp__caption__center"></div>
-          </div>
+        </div>
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
         </div>
       </div>
     </div>
-    <!-- end photoSwipe background -->
+  </div>
+  <!-- end photoSwipe background -->
 
-    <!-- Java Script
+  <!-- Java Script
     ================================================== -->
-    <script src="./assets/js/jquery-3.7.1.min.js"></script>
-    <script src="./assets/js/plugins.js"></script>
-    <script src="./assets/js/main.js"></script>
-    <!-- <script src="./assets/js/script.js"></script> -->
-    <!-- Magic Mouse -->
-    <script src="./assets/js/magicmouse-2.0.0.cdn.min.js"></script>
-    <script>
-      options = {
-        outerStyle: "circle",
-        hoverEffect: "circle-move",
-        hoverItemMove: false,
-        defaultCursor: false,
-        outerWidth: 30,
-        outerHeight: 30,
-      };
-      magicMouse(options);
-    </script>
-    <!-- End -->
-    <script>
-      document.addEventListener(
-        "scroll",
-        (event) => {
-          const aosAnimation = document.querySelectorAll("[data-aos]");
-          observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-              if (entry.intersectionRatio > 0) {
-                entry.target.classList.add("aos-animate");
-              } else {
-                entry.target.classList.remove("aos-animate");
-              }
-            });
+  <script src="./assets/js/jquery-3.7.1.min.js"></script>
+  <script src="./assets/js/plugins.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <!-- <script src="./assets/js/script.js"></script> -->
+  <!-- Magic Mouse -->
+  <script src="./assets/js/magicmouse-2.0.0.cdn.min.js"></script>
+  <script>
+    options = {
+      outerStyle: "circle",
+      hoverEffect: "circle-move",
+      hoverItemMove: false,
+      defaultCursor: false,
+      outerWidth: 30,
+      outerHeight: 30,
+    };
+    magicMouse(options);
+  </script>
+  <!-- End -->
+  <script>
+    document.addEventListener(
+      "scroll",
+      (event) => {
+        const aosAnimation = document.querySelectorAll("[data-aos]");
+        observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.intersectionRatio > 0) {
+              entry.target.classList.add("aos-animate");
+            } else {
+              entry.target.classList.remove("aos-animate");
+            }
           });
-          aosAnimation.forEach((aosObject) => {
-            observer.observe(aosObject);
-          });
-        },
-        { capture: true, passive: true }
-      );
-    </script>
-    <!-- Firebase Scripts -->
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-          apiKey: "AIzaSyCoCTDG6K_8Zq-AuJ36Wdg6wuCWdgrQkDM",
-          authDomain: "brand-atelier.firebaseapp.com",
-          projectId: "brand-atelier",
-          storageBucket: "brand-atelier.appspot.com",
-          messagingSenderId: "108017090238",
-          appId: "1:108017090238:web:959dae4c72f50f23bf28ef",
-          measurementId: "G-ESP9709P67"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-      </script>
-  </body>
+        });
+        aosAnimation.forEach((aosObject) => {
+          observer.observe(aosObject);
+        });
+      },
+      { capture: true, passive: true }
+    );
+  </script>
+  <!-- Firebase Scripts -->
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCoCTDG6K_8Zq-AuJ36Wdg6wuCWdgrQkDM",
+      authDomain: "brand-atelier.firebaseapp.com",
+      projectId: "brand-atelier",
+      storageBucket: "brand-atelier.appspot.com",
+      messagingSenderId: "108017090238",
+      appId: "1:108017090238:web:959dae4c72f50f23bf28ef",
+      measurementId: "G-ESP9709P67"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</body>
+
 </html>
